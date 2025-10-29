@@ -1,7 +1,7 @@
 # 💬 Messenger Frontend (React + TypeScript + Vite)
 
-Интерфейс современного мессенджера с **реальными чатами**, **группами**, **онлайн-статусами** и **моментальной синхронизацией** через WebSocket.  
-Создан на **React + TypeScript + Zustand + Socket.IO + TailwindCSS**.
+Интерфейс современного мессенджера с **чатами**, **статусами** и **моментальной синхронизацией** через WebSocket.  
+Создан на **React + TypeScript + Zustand + Socket.IO**.
 
 ---
 
@@ -13,20 +13,20 @@
 
 ## ⚙️ Технологии
 
-- ⚛️ **React 18**
+- ⚛️ **React 19**
 - 🧠 **TypeScript**
 - ⚡ **Vite**
 - 🧩 **Zustand** — управление состоянием  
 - 🔌 **Socket.IO Client** — WebSocket соединение  
-- 🎨 **TailwindCSS + shadcn/ui** — интерфейс  
+- 🎨 **Свои ui модули** — интерфейс  
 - 🪶 **Axios** — работа с API  
 
 ---
 
 ## 🚀 Возможности
 
-✅ Реальное время через WebSocket  
-✅ Онлайн / оффлайн статусы пользователей  
+✅ Обмен сообщениями через WebSocket  
+✅ Статусы пользователей  
 ✅ Список чатов и сообщений  
 ✅ Подсчет непрочитанных сообщений  
 ✅ Групповые чаты  
@@ -39,7 +39,7 @@
 
 ```bash
 # Клонирование репозитория
-git clone https://github.com/username/messenger-frontend.git
+git clone https://github.com/xanseee/frontend-part-of-messenger.git
 cd messenger-frontend
 
 # Установка зависимостей
