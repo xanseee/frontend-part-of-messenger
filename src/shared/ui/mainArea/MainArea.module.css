@@ -1,0 +1,6 @@
+.chatArea {
+   display: flex;
+	flex: 1;
+   flex-direction: column;
+   background: #0f0f0f;
+}

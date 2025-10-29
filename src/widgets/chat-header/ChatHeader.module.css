@@ -1,0 +1,28 @@
+.chatAvatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 12px;
+}
+
+.chatDetails {
+   margin-left: 10px;
+}
+
+.chatName {
+	font-weight: 500;
+   white-space: nowrap; 
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.chatStatus {
+   font-size: 13px;
+   color: #0088cc;
+}
