@@ -1,69 +1,49 @@
-# React + TypeScript + Vite
+# 💬 Messenger Frontend (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Интерфейс современного мессенджера с **реальными чатами**, **группами**, **онлайн-статусами** и **моментальной синхронизацией** через WebSocket.  
+Создан на **React + TypeScript + Zustand + Socket.IO + TailwindCSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,typescript,vite,zustand" />
+</p>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Технологии
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ **React 18**
+- 🧠 **TypeScript**
+- ⚡ **Vite**
+- 🧩 **Zustand** — управление состоянием  
+- 🔌 **Socket.IO Client** — WebSocket соединение  
+- 🎨 **TailwindCSS + shadcn/ui** — интерфейс  
+- 🪶 **Axios** — работа с API  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Возможности
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ Реальное время через WebSocket  
+✅ Онлайн / оффлайн статусы пользователей  
+✅ Список чатов и сообщений  
+✅ Подсчет непрочитанных сообщений  
+✅ Групповые чаты  
+✅ Авторизация по JWT  
+✅ Отправка и получение сообщений в реальном времени  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Установка и запуск
+
+```bash
+# Клонирование репозитория
+git clone https://github.com/username/messenger-frontend.git
+cd messenger-frontend
+
+# Установка зависимостей
+npm install
+
+# Запуск dev-сервера
+npm run dev
